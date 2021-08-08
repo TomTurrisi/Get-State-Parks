@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <title>GET requests with complex data</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="GET requests with complex data" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GET requests with complex data</h1>
+    </header>
+
+    <main>
+        <section class="search">
+            <form id="search-form">
+                <h2>Search U.S. National Parks<br> Example for New Jersey type NJ.</h2>
+                <p>Enter State Code.</p>
+                <input type="text" id="name-state" class="input-form" placeholder="Enter a state code."/>
+                <p>Type the number of parks.<br> Defualt is 10.</p>
+                <input type="text" id="number-input" class="inputform" placeholder="Default 10 park results"/>
+                <input id="submit-button" class="sub-button" type="submit" value="Submit"/>
+            </form>
+        </section>
+        
+        <section id="results-parks" class="container hidden"></section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
